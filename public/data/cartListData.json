@@ -21,10 +21,21 @@
       "product_price": 5000,
       "product_image": "https://images.unsplash.com/photo-1584305574647-0cc949a2bb9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
       "price": 5000
+    },
+    {
+      "cart_id": 4,
+      "product_id": 3,
+      "product_name": "녹차비누",
+      "category_name": "솝",
+      "size": 20,
+      "quantity": 3,
+      "product_price": 5000,
+      "product_image": "https://images.unsplash.com/photo-1584305574647-0cc949a2bb9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
+      "price": 5000
     }
   ],
-  "total_quantity": 4,
-  "total_price": 26000,
+  "total_quantity": 3,
+  "total_price": 41000,
   "shipping": 2500,
-  "order_price": 28500
+  "order_price": 43500
 }

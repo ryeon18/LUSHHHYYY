@@ -72,7 +72,7 @@ class OrderTable extends Component {
                 <col style={{ width: '10%' }}></col>
                 <col style={{ width: '7%' }}></col>
                 <col style={{ width: '10%' }}></col>
-                <col style={{ width: '10%' }}></col>
+                {/* <col style={{ width: '10%' }}></col> */}
               </colgroup>
               <thead>
                 <tr>
