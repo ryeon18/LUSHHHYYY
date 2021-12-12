@@ -17,11 +17,13 @@ class Cart extends Component {
   }
 
   componentDidMount() {
-    fetch(`${API.CART}`, {
-      headers: {
-        Authorization: localStorage.getItem('token'),
-      },
-    })
+    // fetch(`${API.CART}`, {
+    // fetch('/data/cartListData.json', {
+    //   headers: {
+    //     Authorization: localStorage.getItem('token'),
+    //   },
+    // })
+    fetch('/data/cartListData.json')
       .then(res => res.json())
       .then(inCart => {
         this.setState({ isEmptyCart: inCart.cart_list });

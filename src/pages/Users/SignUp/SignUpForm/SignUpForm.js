@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import './SignupForm.scss';
+import './SignUpForm.scss';
 import { API } from '../../../../config';
 
 class SignUpForm extends Component {

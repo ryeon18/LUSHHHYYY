@@ -13,11 +13,12 @@ class OrderTable extends Component {
   }
 
   componentDidMount() {
-    fetch(`${API.CART}`, {
-      headers: {
-        Authorization: localStorage.getItem('token'),
-      },
-    })
+    // fetch(`/data/cartListData.json`, {
+    //   headers: {
+    //     Authorization: localStorage.getItem('token'),
+    //   },
+    // })
+    fetch('/data/cartListData.json')
       .then(res => res.json())
       .then(cartData => {
         this.setState({ cartList: cartData.cart_list, productSpac: cartData });
