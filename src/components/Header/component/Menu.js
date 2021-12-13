@@ -12,13 +12,13 @@ class Menu extends Component {
     };
   }
 
-  componentDidMount() {
-    fetch('')
-      .then(res => res.json())
-      .then(data => {
-        this.setState({ menu: data });
-      });
-  }
+  // componentDidMount() {
+  //   fetch('')
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       this.setState({ menu: data });
+  //     });
+  // }
 
   render() {
     const { onMouseEnter } = this.props;
@@ -28,7 +28,7 @@ class Menu extends Component {
           const { id, menu, menuLink } = mainmenu;
           return (
             <ul key={id}>
-              <li key={id}>
+              <li>
                 <Link to={menuLink}>{menu}</Link>
               </li>
             </ul>

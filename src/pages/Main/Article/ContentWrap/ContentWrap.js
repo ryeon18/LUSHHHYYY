@@ -12,7 +12,8 @@ class ContentWrap extends Component {
   }
 
   componentDidMount() {
-    fetch(`${API.PRODUCT_DETAIL}?category=1&offset=1&limit=3`)
+    // fetch(`${API.PRODUCT_DETAIL}?category=1&offset=1&limit=3`)
+    fetch('/data/productDetail.json')
       .then(res => res.json())
       .then(itemData =>
         this.setState({
@@ -28,7 +29,7 @@ class ContentWrap extends Component {
         <header className="productWrap">
           <h2 className="productWrap_text">나만 알고 싶은 비누</h2>
           <div className="productsList">
-            {categoryList.map(product => (
+            {categoryList?.map(product => (
               <ProductCard key={product.id} products={product} />
             ))}
           </div>

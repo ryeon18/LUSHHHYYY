@@ -62,12 +62,14 @@ class Header extends Component {
                 onMouseEnter={this.handlerPopMyPage}
               >
                 <i className="fas fa-user-circle" />
-                {isPopMyPage && <PopMyPage />}
+                {isPopMyPage && (
+                  <PopMyPage onMouseLeave={this.handlerPopMyPage} />
+                )}
               </li>
             </ul>
           </div>
         </nav>
-        {isDropdownOpen && <DropMenu />}
+        {isDropdownOpen && <DropMenu onMouseLeave={this.handlerDropdownOpen} />}
         {isSearch && <Search />}
       </header>
     );

@@ -5,9 +5,9 @@ import './popMyPage.scss';
 
 class PopMyPage extends Component {
   render() {
-    const { onMouseEnter } = this.props;
+    const { onMouseLeave } = this.props;
     return (
-      <ul className="myPageList" onMouseEnter={onMouseEnter}>
+      <ul className="myPageList" onMouseLeave={onMouseLeave}>
         <li>
           <Link to="/SignIn">로그인</Link>
         </li>

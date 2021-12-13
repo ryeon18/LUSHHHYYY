@@ -81,7 +81,7 @@ class OrderTable extends Component {
                       <input className="checkInput" type="checkbox" />
                     </span>
                   </th>
-                  <th>제품정보</th>
+                  <th>제품정보</th>
                   <th>수량</th>
                   <th>금액</th>
                   <th>복지혜택</th>

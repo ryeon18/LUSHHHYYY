@@ -6,8 +6,9 @@ import './dropMenu.scss';
 
 class DropMenu extends Component {
   render() {
+    const { onMouseLeave } = this.props;
     return (
-      <div className="dropMenu">
+      <div className="dropMenu" onMouseLeave={onMouseLeave}>
         {DROP_LIST.map(submenu => {
           const { id, subMenu1, subMenu1Link, subMenu2, subMenu2Link } =
             submenu;

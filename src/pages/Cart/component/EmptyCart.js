@@ -23,7 +23,7 @@ class EmptyCart extends Component {
             <p>
               총 0 개의 금액 ₩ <strong>0</strong> + 배송비 ₩&nbsp;
               <strong>0</strong> = <em>총 주문금액 </em>
-              <span>₩ 0</span>
+              <span>₩ 0</span>
             </p>
           </div>
         </section>
