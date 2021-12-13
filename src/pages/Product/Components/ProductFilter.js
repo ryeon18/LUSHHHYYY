@@ -10,7 +10,8 @@ class ProductFilter extends Component {
   }
 
   sortingSoon = () => {
-    fetch(`${API.PRODUCT_DETAIL}?sort=low_price`)
+    // fetch(`${API.PRODUCT_DETAIL}?sort=low_price`)
+    fetch('/data/productDetail.json?sort=low_price')
       .then(res => res.json())
       .then(sortingInfo =>
         this.setState({

@@ -15,7 +15,8 @@ class ProductCategory extends Component {
   }
 
   componentDidMount() {
-    fetch(`${API.BASE_URL}/navigator/${this.props.match.params.id}`)
+    // fetch(`${API.BASE_URL}/navigator/${this.props.match.params.id}`)
+    fetch(`/navigator/${this.props.match.params.id}`)
       .then(res => res.json())
       .then(navData =>
         this.setState({
@@ -23,7 +24,8 @@ class ProductCategory extends Component {
         })
       );
     fetch(
-      `${API.PRODUCT_DETAIL}?category=${this.props.match.params.id}&offset=0&limit=4`
+      // `${API.PRODUCT_DETAIL}?category=${this.props.match.params.id}&offset=0&limit=4`
+      `/data.productDetail.json?category=${this.props.match.params.id}&offset=0&limit=4`
     )
       .then(res => res.json())
       .then(listData =>
@@ -37,7 +39,8 @@ class ProductCategory extends Component {
   componentDidUpdate(prevProps) {
     if (prevProps.match.params.id !== this.props.match.params.id) {
       fetch(
-        `${API.PRODUCT_DETAIL}?category=${this.props.match.params.id}&offset=0&limit=10`
+        // `${API.PRODUCT_DETAIL}?category=${this.props.match.params.id}&offset=0&limit=10`
+        `/data.productDetail.json?category=${this.props.match.params.id}&offset=0&limit=10`
       )
         .then(res => res.json())
         .then(listData =>

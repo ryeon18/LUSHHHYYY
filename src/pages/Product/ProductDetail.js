@@ -18,7 +18,8 @@ class ProductDetail extends Component {
   }
 
   componentDidMount() {
-    fetch(`${API.PRODUCT_DETAIL}/${this.props.match.params.id}`)
+    // fetch(`${API.PRODUCT_DETAIL}/${this.props.match.params.id}`)
+    fetch(`/data/productDetail.json/${this.props.match.params.id}`)
       .then(res => res.json())
       .then(productInfo =>
         this.setState({
@@ -77,7 +78,8 @@ class ProductDetail extends Component {
 
   goToCart = () => {
     const ID = this.state.productData.options[0].option_id;
-    fetch(`${API.CART}`, {
+    // fetch(`${API.CART}`, {
+    fetch('/carts', {
       method: 'POST',
       headers: {
         Authorization: localStorage.getItem('token'),
