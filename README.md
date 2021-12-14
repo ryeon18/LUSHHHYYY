@@ -16,7 +16,7 @@
 
 ## 구현 페이지
 ### 메인 페이지
-- 기존에는 onMouseLeave를 추가하여 자연스러운 드롭메뉴를 수정했습니다.<br/>
+- onMouseLeave를 추가하여 자연스러운 드롭메뉴를 수정했습니다.<br/>
    - [기존]<br />
 ![기존 구현 영상](https://user-images.githubusercontent.com/62207127/145951793-3bac127c-ecca-4bb8-8d64-0e2267d81bbd.gif)<br />
    - [변경]<br />
